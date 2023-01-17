@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/** clear **/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	background-color: black;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+	border-left: 1px solid whitesmoke;
+	border-right: 1px solid whitesmoke;
+}
+th, td {
+	text-align: center;
+}
+
+
+/** header **/
+header .inner {
+	border-bottom: 1px solid whitesmoke;
+	height: 100px;
+	position: relative;
+}
+header .inner h1 {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+}
+header .inner h1 a {
+	width: 332px;
+}
+header .inner .header_sideUpMenu {
+	display: flex;
+	position: absolute;
+	right: 30px;
+	top: 10px;
+}
+header .inner .header_sideUpMenu li {
+	padding: 0px 10px;
+}
+
+
+/** public **/
+	/* tr에 마우스 올릴시 배경과 글자색 바꿈 */
+.clickAbleTr {
+	cursor: pointer;
+}
+.clickAbleTr:hover {
+	border-bottom: 1px solid white;
+}
+.clickAbleTr:hover td {
+	background-color: white;
+	color: black;
+}
+.clickAbleTr:hover th {
+	background-color: white;
+	color: black;
+}
+
+	/* error */
+.error {
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+
+	/* width 0 */
+.width_hide {
+	width: 0;
+}
+
+	/* tag */
+.tagBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tagBox a div {
+	border: 1px solid gray;
+	width: 100px;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+}
+.tagBox label div {
+	border: 1px solid gray;
+	width: 100px;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+}
+.tagBox input:checked + label div {
+	color: red;
+	background-color: gray;
+}
+.tagChecked {
+	color: red;
+	background-color: gray;
+}
